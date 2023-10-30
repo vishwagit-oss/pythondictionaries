@@ -133,6 +133,7 @@ textbook_dict["textbook3"].update({"author": "Kloey Twistar"})
 #### commit changes to main
 
 #### find out if "Kevin Ramdas" is an author of one of the books
+kevin_ramdas_author = any(textbook["author"] == "Kevin Ramdas" for textbook in textbook_dict.values())
 
 #### find out if "jason adalman" is an author of one of the books
 
