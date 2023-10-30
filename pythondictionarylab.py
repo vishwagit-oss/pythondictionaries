@@ -147,5 +147,10 @@ pages_list = [120, 243, 78, 94, 552, 188]
 cntr = 0 
 # used as the index for pages_list
 #### for each of the textbooks in textbook_dict add a new key called pages with the respective value of pages_list
+for textbook_key, textbook in textbook_dict.items():
+    textbook["pages"] = pages_list[cntr]
+    cntr += 1
 
+# Check the updated textbook_dict
+print(textbook_dict)
 #### commit changes to main
