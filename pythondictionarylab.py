@@ -136,7 +136,10 @@ textbook_dict["textbook3"].update({"author": "Kloey Twistar"})
 kevin_ramdas_author = any(textbook["author"] == "Kevin Ramdas" for textbook in textbook_dict.values())
 
 #### find out if "jason adalman" is an author of one of the books
+jason_adalman_author = any(textbook["author"].lower() == "jason adalman" for textbook in textbook_dict.values())
 
+print("Is 'Kevin Ramdas' an author of one of the books? ", kevin_ramdas_author)
+print("Is 'Jason Adalman' an author of one of the books? ", jason_adalman_author)
 #### oops, Kloey Twistar is not actually the author of textbook3, maybe we should go back in time to the previous commit 
 
 
