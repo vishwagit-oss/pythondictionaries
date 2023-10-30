@@ -67,6 +67,7 @@ textbook_dict = {
 textbook_dict["textbook4"]["awards"].append("topstar")
 
 #### commit changes to main
+print(textbook_dict["textbook4"]["awards"])
 
 #there are two ways to get a value associated with a key (like above), or by using the get methods
 #print(textbook_dict["textbook1"])
@@ -128,7 +129,7 @@ textbook_dict['textbook6']["awards"] = ["globe", "gold"]
 
 
 #### using one of the dictionary methods, change the author of textbook3 to Kloey Twistar 
-
+textbook_dict["textbook3"].update({"author": "Kloey Twistar"})
 #### commit changes to main
 
 #### find out if "Kevin Ramdas" is an author of one of the books
