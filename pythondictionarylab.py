@@ -64,6 +64,7 @@ textbook_dict = {
 #print(textbook_dict["textbook1"]["awards"])
 
 #### add a new award names topstar to textbook4
+textbook_dict["textbook4"]["awards"].append("topstar")
 
 #### commit changes to main
 
